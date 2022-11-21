@@ -16,18 +16,7 @@
 
 **Back-end** 
 
-<img src="https://img.shields.io/badge/Spring Boot-6DB33F"/>
-<img src="https://img.shields.io/badge/Gradle-02303A"/>
-<img src="https://img.shields.io/badge/Spring_JPA-6DB33F"/>
-<img src="https://img.shields.io/badge/AWS EC2-FF9900"/>
-<img src="https://img.shields.io/badge/Hibernate-59666C"/>
-<img src="https://img.shields.io/badge/Apache Tomcat-F8DC75"/>
-<img src="https://img.shields.io/badge/Thymeleaf-005F0F"/>
-<img src="https://img.shields.io/badge/Spring_Security-6DB33F"/>
-<img src="https://img.shields.io/badge/Spring_Web-6DB33F"/>
-<img src="https://img.shields.io/badge/Spring_WebSeocket-6DB33F"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1"/>
-<img src="https://img.shields.io/badge/AWS RDS-527FFF"/>
+<img src="https://img.shields.io/badge/Spring Boot-6DB33F"/> <img src="https://img.shields.io/badge/Gradle-02303A"/> <img src="https://img.shields.io/badge/Spring_JPA-6DB33F"/> <img src="https://img.shields.io/badge/AWS EC2-FF9900"/> <img src="https://img.shields.io/badge/Hibernate-59666C"/> <img src="https://img.shields.io/badge/Apache Tomcat-F8DC75"/> <img src="https://img.shields.io/badge/Thymeleaf-005F0F"/> <img src="https://img.shields.io/badge/Spring_Security-6DB33F"/> <img src="https://img.shields.io/badge/Spring_Web-6DB33F"/> <img src="https://img.shields.io/badge/Spring_WebSeocket-6DB33F"/> <img src="https://img.shields.io/badge/MySQL-4479A1"/> <img src="https://img.shields.io/badge/AWS RDS-527FFF"/>
 
 - - -
 ## 3.아키텍처
