@@ -207,15 +207,15 @@
     var today = new Date();
     var date = today.toLocaleString();
 
-    var FromUsertags = $("<li class=\"msg-right\"><div class=\"msg-left-sub\"><img src=\"/upload/"
+    var FromUsertags = $("<li class=\"msg-right\"><div class=\"msg-left-sub\"><img src="
         + LoginUser.imageUrl
-        + "\" onerror=\"this.src='/images/avatar.png'\" /><div class=\"msg-desc\">" + msg
+        + "\"/upload/\" onerror=\"this.src='/images/avatar.png'\" /><div class=\"msg-desc\">" + msg
         + "</div><small>" + date + "</small></div></li>");
 
     var ReceivedUsertags = $(
-        "<li class=\"msg-left\"><div class=\"msg-left-sub\"><img src=\"/upload/"
+        "<li class=\"msg-left\"><div class=\"msg-left-sub\"><img src="
         + SelectedUser.profileImage
-        + "\" onerror=\"this.src='/images/avatar.png'\" /><div class=\"msg-desc\">" + msg
+        + "\"/upload/\" onerror=\"this.src='/images/avatar.png'\" /><div class=\"msg-desc\">" + msg
         + "</div><small>" + date + "</small></div></li>");
 
     if ((fromUser === SelectedUser.username && !isMe) || isMe) {
