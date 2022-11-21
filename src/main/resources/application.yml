@@ -43,4 +43,4 @@ spring:
       max-file-size: 2MB
 
 file:
-  path: /Users/samkim/Desktop/tmp/newGryllo/upload/
+  path: /Users/samkim/Desktop/tmp/newGryllo/src/main/resources/upload/
