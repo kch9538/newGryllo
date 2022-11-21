@@ -13,9 +13,9 @@ spring:
     suffix: .html
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://gryllo-db.ce7keqboroho.ap-northeast-2.rds.amazonaws.com:3306/gryllo?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: grylloadmin
-    password: gryllo1234
+    url: 
+    username:
+    password: 
   mustache:
     expose-session-attributes: true
   security:
