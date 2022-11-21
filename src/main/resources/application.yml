@@ -1,0 +1,41 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:templates/
+    suffix: .html
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://gryllo-db.ce7keqboroho.ap-northeast-2.rds.amazonaws.com:3306/gryllo?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: grylloadmin
+    password: gryllo1234
+  mustache:
+    expose-session-attributes: true
+  security:
+    user:
+      name: admin
+      password: 1234
+
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mappings: false
+    show-sql: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+
+file:
+  path: /Users/samkim/Desktop/tmp/newGryllo/src/main/resources/upload

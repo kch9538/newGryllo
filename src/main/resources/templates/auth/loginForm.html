@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns="http://www.w3.org/1999/xhtml"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gryllo</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <main id="login">
+      <div class="login__column">
+        <div class="login__box" id="main__loginbox">
+          <img src="/images/logo2.png" />
+          <form
+            th:action="@{/auth/loginProcess}"
+            method="post"
+            class="login__form"
+          >
+            <div class="group">
+              <input type="text" name="username" required />
+              <label>사용자 이름</label>
+            </div>
+            <div class="group">
+              <input type="password" name="password" required />
+              <label>비밀번호</label>
+            </div>
+            <input type="submit" value="로그인" />
+          </form>
+          <div
+            th:if="${param.error}"
+            class="alert alert-light"
+            role="alert"
+            id="eiCW-"
+            style="font-weight: 400"
+          >
+            사용자 이름 혹은 비밀번호가 맞지않습니다.
+          </div>
+          <a href="#" class="login__small-link">비밀번호를 잊으셨나요?</a>
+        </div>
+        <div class="login__box" id="bottom__loginbox">
+          <span class="login__text"> 계정이 없으신가요? <br /> </span>
+          <a class="login__green-link" href="/auth/joinForm">가입하기</a>
+        </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

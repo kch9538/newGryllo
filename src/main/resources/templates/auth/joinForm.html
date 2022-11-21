@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html 
+  xmlns:th="http://www.thymeleaf.org"
+ >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Gryllo</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<main id="login">
+		<div class="login__column" id="for__join">
+			<div class="login__box">
+				<img src="/images/logo2.png" />
+				<form action="/auth/join" method="post" class="login__form">
+					<div class="group">
+						<input type="email" name="email" required> 
+						<label>이메일 주소</label>
+					</div>
+					<div class="group">
+						<input type="text" name="name" required>
+						<label>성명</label>
+					</div>
+						<div class="group">
+						<input type="text" name="username" required> 
+						<label>사용자 이름</label>
+					</div>
+					<div class="group">
+						<input type="password" name="password" required>
+						<label>비밀번호</label>
+					</div>
+					<input type="submit" value="가입">
+				</form>
+			</div>
+			<div class="login__box">
+				<span class="login__text"> 계정이 있으신가요? <br />
+				</span> <a class="login__green-link" href="/auth/loginForm">로그인</a>
+			</div>
+		</div>
+	</main>
+  </body>
+</html>
